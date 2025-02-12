@@ -1,0 +1,31 @@
+#body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+}
+
+#lesson{
+    border: 1px solid black;
+    width: 375px;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #eaeaea;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 5vh;
+    font-size: 20px;
+    padding: 10px;
+}
+
+#wronganswer{
+    color: red;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+    width: 375px;
+}
+

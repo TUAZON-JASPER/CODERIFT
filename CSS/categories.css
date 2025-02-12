@@ -1,0 +1,64 @@
+.categories {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px; /* Space between items */
+  margin-top: 50px;
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+}
+
+.title{
+  font-size: 20px;
+}
+
+
+/* Stack the boxes vertically on smaller screens */
+@media (max-width: 768px) {
+  .categories {
+    flex-direction: column; /* Stack boxes vertically */
+    gap: 30px; /* Reduce gap for smaller screens */
+    margin-top: 30px; /* Reduce top margin */
+  }
+}
+
+/* For very small screens (e.g., mobile devices) */
+@media (max-width: 576px) {
+  .categories {
+    gap: 20px; /* Further reduce gap for mobile devices */
+  }
+
+  .cpp, .java {
+    width: 90%; /* Make items occupy most of the screen width */
+    padding: 15px; /* Reduce padding */
+  }
+}
+
+.cpp, .java {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px; /* Fixed width for larger screens */
+  max-width: 100%; /* Ensure boxes don't exceed screen width */
+  border: 1px solid;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: white;
+}
+
+.cpp {
+  border-color: #1A4674;
+}
+
+.cpp:hover {
+  border-color: #3575B9;
+  background-color: #3575B9;
+}
+
+.java {
+  border-color: #F58219;
+}
+
+.java:hover {
+  border-color: #FAC695;
+  background-color: #FAC695;
+}

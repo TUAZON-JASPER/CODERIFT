@@ -1,0 +1,78 @@
+#body{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 50px;
+}
+
+#topics{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#topic{
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1A4674;
+    color: white;
+    padding: 10px;
+    border-radius: 15px;
+    left: 50%;
+    transform: translate(-50%);
+    position: absolute;
+    cursor: pointer;
+    border: none;
+    z-index: 1;
+}
+
+#modal-title{
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+#modal{
+    visibility: hidden; 
+    width: 500px;
+    color: black;
+    padding: 40px 25px;
+    border-radius: 15px;
+    background-color: #ced7e0;
+    cursor: pointer;
+    position: relative;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    z-index: 1;
+}
+
+
+span{
+    position: absolute;
+    top: 15px;
+    right: 40px;
+}
+
+li{
+    list-style: circle;
+}
+
+#lesson{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#li{
+    list-style: none;
+}
+
+body{
+    background-color: white;
+}

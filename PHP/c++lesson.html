@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson Page</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-image: url('img/bg.png');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .header {
+            background-color: #098d40;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .module {
+            padding: 20px 0 0 0;
+            background-color: white;
+            margin-bottom: 10px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .module-title {
+            font-size: 24px;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .module-description {
+            font-size: 16px;
+            text-align: center;
+            color: #6c757d;
+            margin-bottom: 20px;
+        }
+
+        .lesson-list {
+            list-style: none;
+            padding: 0px;
+        }
+
+        .lesson-list li {
+            font-size: 18px;
+            text-align: center;
+            padding: 30px 0;
+            border-bottom: 1px solid #e9ecef;
+            cursor: grab;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .lesson-list li:hover {
+            background-color: #f8f9fa;
+         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+
+        .lesson-list li:last-child {
+            border-bottom: none;
+        }
+
+        .clogo {
+            width: 100px;
+            height: 100px;
+            animation: pulse 2s linear infinite;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        audio {
+            max-width: 100%;
+        }
+
+        .bg{
+            background: #098d40;
+        }
+        
+        #back{
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg">
+        <a href="/HTML/lessons.html"><img id="back" src="/img/back.png" alt="" height="40px"></a>
+        <div class="header">
+            <img class="clogo" src="/img/c++.png">
+            <h1>C++ Lessons</h1>
+        </div>
+    </div>
+
+    <div class="container mt-4">
+        <div class="module">
+            <h2 class="module-title">C++ Basics</h2>
+            <p class="module-description">Learn the fundamentals of C++</p>
+            <ul class="lesson-list">
+                <li data-toggle="modal" data-target="#lesson1Modal">Lesson 1: <br><span style="font-size: 22px;">Introduction to C++</span></li>
+                <li data-toggle="modal" data-target="#lesson2Modal">Lesson 2: <br><span style="font-size: 22px;">Basic Input/Output</span></li>
+                <li data-toggle="modal" data-target="#lesson3Modal">Lesson 3: <br><span style="font-size: 22px;">Variables in C++</span></li>
+                <li data-toggle="modal" data-target="#lesson4Modal">Lesson 4: <br><span style="font-size: 22px;">Data Types</span></li>
+                <li data-toggle="modal" data-target="#lesson5Modal">Lesson 5: <br><span style="font-size: 22px;">Operators</span></li>
+                <li data-toggle="modal" data-target="#lesson6Modal">Lesson 6: <br><span style="font-size: 22px;">Decision-Making Statements</span></li>
+                <li data-toggle="modal" data-target="#lesson7Modal">Lesson 7: <br><span style="font-size: 22px;">Loop Types</span></li>
+                <li data-toggle="modal" data-target="#lesson8Modal">Lesson 8: <br><span style="font-size: 22px;">Functions</span></li>
+                <li data-toggle="modal" data-target="#lesson9Modal">Lesson 9: <br><span style="font-size: 22px;">Arrays</span></li>
+                <li data-toggle="modal" data-target="#lesson10Modal">Lesson 10: <br><span style="font-size: 22px;">Strings</span></li>
+                <li data-toggle="modal" data-target="#lesson11Modal">Lesson 11: <br><span style="font-size: 22px;">Pointers</span></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Modals -->
+    <!-- Lesson 1 Modal -->
+    <div class="modal fade" id="lesson1Modal" tabindex="-1" aria-labelledby="lesson1ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="lesson1ModalLabel">Lesson 1: Introduction to C++</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>C++ is a powerful, high-performance programming language that supports multiple 
+                        programming paradigms, including procedural, object-oriented, and generic programming. 
+                        It was created by Bjarne Stroustrup in the early 1980s as an enhancement to the C language. C++
+                         is widely used for system/software development, game programming, 
+                         and applications requiring real-time performance.
+                    </p>
+                    <ul style="list-style: none;">
+                        <li><strong>Key Features: </strong>
+                        <ul>
+                            <li>Compiled language for faster execution.</li>
+                            <li>Strongly typed with a rich set of data types.</li>
+                            <li>Support for low-level memory manipulation.</li>
+                            <li>Extensive standard library.</li>
+                        </ul>
+                        </li>
+                        <li><strong>File Extension: </strong> The standard file extension for C++ source code is <strong>.cpp.</strong></li>
+                    </ul>
+                    
+                    <audio controls>
+                        <source src="path/to/audio/file1.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Lesson 2 Modal -->
+    <div class="modal fade" id="lesson2Modal" tabindex="-1" aria-labelledby="lesson2ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="lesson2ModalLabel">Lesson 2: Basic Input/Output</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>C++ provides robust facilities for input and output operations primarily through the 
+                        <strong>iostream</strong> library. The two main objects used for I/O are cin (console input) and 
+                        cout (console output).
+                    </p>
+                    <ul style="list-style: none;">
+                        <li><strong>Output Keyword: </strong>The keyword used for output in C++ is <strong> cout.</strong></li>
+                        <li><strong>Example:</strong></li>
+                    </ul>
+                    <audio controls>
+                        <source src="path/to/audio/file2.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Lesson 3 Modal -->
+    <div class="modal fade" id="lesson3Modal" tabindex="-1" aria-labelledby="lesson3ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="lesson3ModalLabel">Lesson 3: Variables in C++</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Variables are used to store data in a program. Each variable must be declared with a 
+                        specific data type before it can be used, indicating what kind of data it can hold.</p>
+                        <ul style="list-style: none;">
+                            <li><strong>Correct Declaration: </strong>The correct way to declare an integer variable is <strong> int x;.</strong></li>
+                            <li><strong>Example:</strong><br>
+                                int age = 30; // Declaration of an integer variable 
+                                float height = 5'9; // Declaration of a floating-point variable 
+                                char initial = 'A'; // Declaration of a character variable
+                                </li>
+                        </ul>
+                    <audio controls>
+                        <source src="path/to/audio/file3.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="lesson4Modal" tabindex="-1" aria-labelledby="lesson4ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="lesson4ModalLabel">Lesson 4: Data Types</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>C++ supports various data types that define the type 
+                        of data a variable can hold. Common data types include:</p>
+                    <ul>
+                        <li><strong>int: </strong>Whole numbers (e.g., int score = 100;)</li>
+                        <li><strong>float: </strong>Floating-point numbers (e.g., float temperature = 36.6;)</li>
+                        <li><strong>double: </strong>Larger floating-point numbers (e.g., double pi = 3.14159;)</li>
+                        <li><strong>char: </strong>Single characters (e.g., char letter = 'Z';)</li>
+                        <li><strong>bool: </strong>Boolean values (true/false).</li>
+                    </ul>
+                    <li style="list-style: none;"><strong>Floating-Point Keyword: </strong>The keyword used to declare a floating-point variable is <strong>float.</strong></li>
+                    <li style="list-style: none;"><strong>Example: </strong>
+                    <br>
+                    float average = 85.5;  // Declare a floating-point variable</li>
+                    
+                    <audio controls>
+                        <source src="path/to/audio/file3.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="lesson5Modal" tabindex="-1" aria-labelledby="lesson5ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="lesson5ModalLabel">Lesson 5: Operators</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Operators in C++ are symbols used to perform operations on variables and values.
+                        Types of Operators</p>
+                        
+                        <br><strong>Arithmetic Operators:</strong> Perform basic math operations.
+                        <br>Example: +, -, *, /, %<br>
+                        <br><strong>Relational Operators:</strong>  Compare values.
+                        <br>Example: ==, !=, >, <, >=, <=<br>
+                        <br><strong>Logical Operators:</strong> Combine conditions.
+                        <br>Example: &&, ||, !<br>
+                        <br><strong>Assignment Operators:</strong> Assign values to variables.
+                        <br>Example: =, +=, -=, *=, /=, %=<br>
+                        <br><strong>Increment/Decrement Operators:</strong> Increase or decrease variable values by one.
+                        <br>Example: ++, --<br>
+                        <br><strong>Bitwise Operators:</strong> Perform operations on binary numbers.
+                        <br>Example: &, |, ^, <<, >><br>
+                        <br><strong>Ternary Operator:</strong> Conditional operator.
+                        <br>Example: condition ? value_if_true : value_if_false<br>
+                        <br><strong>Example: </strong>
+                        <ul>
+                            <li style="list-style: none;">Arithmetic: int result = 10 + 5;</li>
+                            <li style="list-style: none;">Relational: bool is_equal = (10 == 5);</li>
+                            <li style="list-style: none;">Logical: bool logical_result = (true && false);</li>
+                            <li style="list-style: none;">Assignment: int x = 10; x += 5;</li>
+                            <li style="list-style: none;">Increment/Decrement: int y = 5; y++;</li>
+                            <li style="list-style: none;">Bitwise: int z = 3 & 6;</li>
+                            <li style="list-style: none;">Ternary: int max_num = (a > b) ? a : b;</li>
+                        </ul>
+                            <li style="list-style: none;"><strong>Usage:</strong> Operators are essential for calculations, comparisons, and logical operations in C++.
+                                They manipulate variables and control program flow efficiently.</li>
+                    <audio controls>
+                        <source src="path/to/audio/file3.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="lesson6Modal" tabindex="-1" aria-labelledby="lesson6ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="lesson6ModalLabel">Lesson 6: Decision-Making Statements</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>C++ provides various control structures for decision-making, such as if, else if, else, 
+                        and switch. These allow you to execute different blocks of code based on certain conditions.</p>
+                    <ul>
+                        <li style="list-style: none;"><strong>Switch Statement: </strong>The keyword used to handle multiple cases in a
+                            switch is <strong> case.</strong></li>
+                        <li style="list-style: none;"><strong>Example: </strong><br>
+                            int number = 15; <br>
+                            if (number > 0) {<br>
+                                cout << "Positive number"; <br>
+                            } else if (number < 0) { <br>
+                                cout << "Negative number"; <br>
+                            } else { <br>
+                                cout << "Zero"; <br>
+                            }
+                        </li>
+                    </ul>
+                    <audio controls>
+                        <source src="path/to/audio/file3.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="lesson7Modal" tabindex="-1" aria-labelledby="lesson7ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="lesson7ModalLabel">Lesson 7: Loop Types</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Loops are used to execute a block of code multiple times. C++ supports several types of loops:</p>
+                    <ul>
+                        <li><strong>for Loop: </strong>Typically used when the number of iterations is known.</li>
+                        <li><strong>while Loop: </strong>Used when the number of iterations is not predetermined.</li>
+                        <li><strong>do-while Loop</strong>Similar to the while loop, but guarantees at least one execution.</li>
+                    </ul>
+                    <ul style="list-style: none;">
+                        <li><strong>Common Loop: </strong>The loop typically used when the number of iterations is known is the <strong> for </strong>loop.</li>
+                        <li><strong>Example of a for loop:</strong></li>
+                    </ul>
+                    <audio controls>
+                        <source src="path/to/audio/file3.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="lesson8Modal" tabindex="-1" aria-labelledby="lesson8ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="lesson8ModalLabel">Lesson 8: Functions</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Functions in C++ are blocks of code designed to perform a specific task. 
+                        They help in organizing code and promoting reusability.</p>
+                    
+                    <ul>
+                        <li style="list-style: none;"><strong>Passing Values: </strong>Values are passed to functions using<strong> Parameters.</strong></li>
+                        <li style="list-style: none;"><strong>Example: </strong></li>
+                    </ul>
+                    <audio controls>
+                        <source src="path/to/audio/file3.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="lesson9Modal" tabindex="-1" aria-labelledby="lesson9ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="lesson9ModalLabel">Lesson 9: Arrays</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Arrays are collections of items of the same type, allowing you to store multiple values in a single variable.</p>
+                    <ul>
+                        <li style="list-style: none;"><strong>Last Element Index: </strong>The index of the last element in a 5-element array is<strong> 4.</strong></li>
+                        <li style="list-style: none;"><strong>Example: </strong></li>
+                    </ul>
+                    <audio controls>
+                        <source src="path/to/audio/file3.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="lesson10Modal" tabindex="-1" aria-labelledby="lesson10ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="lesson10ModalLabel">Lesson 10: Strings</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Strings in C++ are used to handle text and are part of the standard library. 
+                        The string class provides various functions to manipulate strings.</p>
+
+                    <ul>
+                        <li style="list-style: none;"><strong>String Length Function: </strong>The function that returns the length of a string is <strong>length().</strong></li>
+                        <li style="list-style: none;"><strong>Example: </strong></li>
+                    </ul>
+                    <audio controls>
+                        <source src="path/to/audio/file3.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="lesson11Modal" tabindex="-1" aria-labelledby="lesson11ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="lesson11ModalLabel">Lesson 11: Pointers</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Pointers are variables that store the memory address of another variable. 
+                        They are powerful features of C++ that enable direct memory management.</p>
+                        
+                        <ul>
+                            <li style="list-style: none;"><strong>Null Pointer Value: </strong>The value typically assigned to a pointer that does not point to anything is <strong>nullptr.</strong></li>
+                            <li style="list-style: none;"><strong>Example: </strong></li>
+                        </ul>
+                    <audio controls>
+                        <source src="path/to/audio/file3.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <audio id="bgmusic" loop>
+        <source src="/audio/quizmusic.mp3" type="audio/mpeg">
+        Your browser does not support the audio tag.
+    </audio>
+    <script src="/script/audio.js"></script>
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

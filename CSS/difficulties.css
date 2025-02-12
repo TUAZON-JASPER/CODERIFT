@@ -1,0 +1,300 @@
+.difficulties {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin: 50px auto; 
+    max-width: 100%; 
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* EASY C++ & JAVA */
+#cover{
+    /* background: #1A4674; */
+    position: absolute;
+    z-index: 1;
+    width: 350px;
+    border-radius: 15px;
+    height: 205px;
+    text-align: center;
+    color: WHITE;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 35px;
+    font-weight: 900;
+    visibility: visible ;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.cpp{
+    background: #d46d0e;
+    
+}
+
+.java{
+    background: #F58219;
+}
+
+#ceasy{
+    border: 2px solid #1A4674;
+    border-radius: 15px;
+    width: 350px;
+    height: 200px;
+    padding: 10px;   
+    display: flex;
+    flex-direction: row;
+    color: black;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+#jeasy{
+    border: 2px solid #F58219;
+    border-radius: 15px;
+    width: 350px;
+    height: 200px;
+    padding: 10px;   
+    display: flex;
+    flex-direction: row;
+    color: black;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.definition{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 170px;
+    gap: 5px;
+}
+
+.title{
+    font-size: 20px;
+}
+
+.tutorial{
+    font-size: 14px;
+    text-align: center;
+}
+
+.sample{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #949494;
+    height: 170px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.question{
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    height: 37px ;
+    width: 100px;
+}
+
+.choices{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.right, .wrong{
+    border: 1px;
+    padding: 1px 5px;
+    color: white;
+    border-radius: 10px;
+    width: 60px;
+    font-size: 10px;
+    background-color: #CD4141;
+}
+
+/* END EASY C++ & JAVA */
+
+/* INTERMEDIATE C++ & JAVA */
+.cinter{
+    border: 2px solid #1A4674;
+    border-radius: 15px;
+    width: 350px;
+    height: 200px;
+    padding: 10px;   
+    display: flex;
+    flex-direction: row;
+    color: black;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.jinter{
+    border: 2px solid #F58219;
+    border-radius: 15px;
+    width: 350px;
+    height: 200px;
+    padding: 10px;   
+    display: flex;
+    flex-direction: row;
+    color: black;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.sample2{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #949494;
+    width: 110px;
+    height: 170px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.instruction{
+    font-size: 6px;
+    text-align: center;
+    width: 108px;
+}
+
+.question2{
+    background-color: black;
+    font-size: 6px;
+    color: white;
+    width: 102px;
+    padding: 5px;
+    height: 20px;
+    text-align: left;
+    border-radius: 2px;
+}
+
+span{
+    border: 1px solid #D9D9D9;
+    background-color: #797373;
+    color: #797373;
+    width: 20px;
+}
+
+.choices2{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.right2{
+    border: 2px solid #B0ADAD;
+    background-color: #EAE5E5;
+}
+
+.wrong2{
+    background-color: #B0ADAD;
+    color:white;
+}
+
+.right2, .wrong2{
+    font-size: 6px;
+    padding: 5px;
+    border-radius: 2px;
+}
+/* END INTERMEDIATE C++ & JAVA*/
+
+/* ADVANCE C++ & JAVA*/
+.cadvance{
+    border: 2px solid #1A4674;
+    border-radius: 15px;
+    width: 350px;
+    height: 200px;
+    padding: 10px;   
+    display: flex;
+    flex-direction: row;
+    color: black;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.jadvance{
+    border: 2px solid #F58219;
+    border-radius: 15px;
+    width: 350px;
+    height: 200px;
+    padding: 10px;   
+    display: flex;
+    flex-direction: row;
+    color: black;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.sample3{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #949494;
+    height: 170px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+}
+
+.question3{
+    background-color: black;
+    font-size: 6px;
+    color: white;
+    width: 102px;
+    padding: 5px;
+    height: 40px;
+    text-align: center;
+    color: #38A31E;
+    border-radius: 2px;
+}
+
+.textbox{
+    height: 45px;
+    width: 90px;
+    border: 1px solid;
+}
+
+.submit{
+    border: 1px;
+    border-radius: 10px;
+    background-color: #CD4141;
+    color: white;
+    padding: 1px 5px;
+    font-size: 10px;
+}
+
+/* END ADVANCE C++ & JAVA */
+
+
+#cintermediate{
+    pointer-events: none;
+    
+}

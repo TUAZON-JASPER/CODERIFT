@@ -1,0 +1,34 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    margin-top: auto;
+    height: 50px;
+    background-color: #723030;
+    text-align: center;
+}
+
+#mainbody{
+    display: flex;
+
+}
+@media (max-width: 768px) {
+    html, body {
+        height: 100%;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    footer {
+        margin-top: auto;
+        height: 50px;
+        background-color: #723030;
+        text-align: center;
+        width:100%;
+    }
+  }
